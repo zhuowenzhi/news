@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/lib/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../public/css/style.css">
+    <style>
+       .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+            color:#fff;
+            opacity: 1;
+            background: rgba(0,0,0,0.2);
+        }
+        .swiper-pagination-bullet-active {
+            color:#fff;
+            background: hsla(210, 100%, 0%, 0.836);
+        }
+        .swiper-slide a {
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+        .swiper-slide a img{
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   <header>
+       <div class="header">
+            <span class="header-info btn btn-info" id="header-info">个人中心
+                <ul class="header-info-ul"  id="header-info-ul">
+                    <li>111xxxxxxxxxxxxxxxxxx</li>
+                    <li>111</li>
+                    <li>111</li>
+                </ul>
+            </span>
+           <span class="btn btn-success">登录</span>
+           <span class="btn btn-success">注册</span>
+       </div>
+       <nav class="nav">
+           <ul class="nav-ul">新闻咨询区
+               <li>xxxxxx</li>
+               <li>xxxxxx</li>
+               <li>xxxxxx</li>
+           </ul>
+           <ul class="nav-ul">新闻咨询区
+                <li>xxxxxx</li>
+                <li>xxxxxx</li>
+                <li>xxxxxx</li>
+            </ul>
+       </nav>
+   </header>
+    <div class="announcement">
+        <h4>最新公告</h4>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="输入关键字" aria-label="Input group example" aria-describedby="btnGroupAddon">
+             <div class="input-group-prepend">
+                <div class="input-group-text" id="btnGroupAddon">搜索</div>
+            </div>
+        </div>
+    </div>
+   <div class="main">
+        <aside>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a href=""><img src="../public/img/header.jpg" alt="">Slide 1</a></div>
+                    <div class="swiper-slide"><a href=""><img src="../public/img/header.jpg" alt="">Slide 2</a></div>
+                    <div class="swiper-slide"><a href=""><img src="../public/img/header.jpg" alt="">Slide 3</a></div>
+                    <div class="swiper-slide"><a href=""><img src="../public/img/header.jpg" alt="">Slide 4</a></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </aside>
+        <section>
+            <h4>咨询</h4>
+            <ul class="section-ul">
+                <li><a href=""><span class="section-ul-li-title">sssss</span><span class="section-ul-li-time">2019-06-20</span></a></li>
+                <li><a href=""><span class="section-ul-li-title">ss惺惺惜惺惺寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻惺惺惜惺惺寻寻sss</span><span class="section-ul-li-time">2019-06-20</span></a></li>
+                <li><a href=""><span class="section-ul-li-title">sssss</span><span class="section-ul-li-time">2019-06-20</span></a></li>
+                <li><a href=""><span class="section-ul-li-title">sssss</span><span class="section-ul-li-time">2019-06-20</span></a></li>
+                <li><a href=""><span class="section-ul-li-title">sssss</span><span class="section-ul-li-time">2019-06-20</span></a></li>
+                <li><a href=""><span class="section-ul-li-title">sssss</span><span class="section-ul-li-time">2019-06-20</span></a></li>
+                <li><a href=""><span class="section-ul-li-title">sssss</span><span class="section-ul-li-time">2019-06-20</span></a></li>
+            </ul>
+            <nav class="nav-pagination">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </section>
+   </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../public/lib/swiper/dist/js/swiper.min.js"></script>
+<script src="../public/js/common.js"></script>
+<script>
+
+    // 轮播图js
+    var swiper = new Swiper('.swiper-container', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+    });
+</script>
+</html>
